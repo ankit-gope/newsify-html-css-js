@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+
+
+body{
+    font-family: "Poppins",sans-serif;
+    color: var(--primary-text-color);
+}
+p{
+    font-family: "Roberto",sans-serif;
+    color:var(--secondary-text-color);
+    line-height: 1.4 rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1534px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+/* NAV BAR */
+nav{
+    background-color: #f3faff;
+    position: fixed;
+    box-shadow: 0 0 4px #bbd0e2;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+.nav-bar{
+    justify-content: space-evenly;
+    padding-block: 8px;
+}
+.nav-image img{
+    width: 120px;
+}
+.nav-links ul{
+    gap: 16px;
+}
+.hover-links:hover{
+    cursor: pointer;
+    color: var(--secondary-text-color);
+}
+.hover-links:active{
+    color: #2294ed;
+}
+.nav-search{
+    height: 32px;
+    gap: 8px;
+}
+.search-bar{
+    width: 200px;
+    height: 100%;
+    border-radius: 7px;
+    border: 2px solid #bbd0e2;
+    padding-inline: 10px;
+    font-family: "Roboto",sans-serif;
+}
+.search-button{
+    width: 100px;
+    height: 100%;
+    border-radius: 7px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    cursor: pointer;
+    font-family: "Roboto",sans-serif;
+    font-size: 13px;
+}
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+}
+.search-button:active{
+    background-color: rgb(121, 121, 236);
+}
